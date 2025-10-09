@@ -1,0 +1,4 @@
+Selected Gender: female
+Selected Days: saturday, wednesday
+Selected Country: usa
+Selected Colors: yellow, white, green

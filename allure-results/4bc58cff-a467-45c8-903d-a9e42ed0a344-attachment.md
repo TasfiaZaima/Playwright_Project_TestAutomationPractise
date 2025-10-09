@@ -1,0 +1,353 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e16]:
+  - banner [ref=e17]:
+    - generic [ref=e23]:
+      - heading "Automation Testing Practice" [level=1] [ref=e25]:
+        - link "Automation Testing Practice" [ref=e26] [cursor=pointer]:
+          - /url: https://testautomationpractice.blogspot.com/
+      - paragraph [ref=e28]:
+        - generic [ref=e29]: For Selenium, Cypress & Playwright
+  - list [ref=e36]:
+    - listitem [ref=e37]:
+      - link "Home" [ref=e38] [cursor=pointer]:
+        - /url: http://testautomationpractice.blogspot.com/
+    - listitem [ref=e39]:
+      - link "Udemy Courses" [ref=e40] [cursor=pointer]:
+        - /url: https://www.pavanonlinetrainings.com/p/udemy-courses.html
+    - listitem [ref=e41]:
+      - link "Online Trainings" [ref=e42] [cursor=pointer]:
+        - /url: https://www.pavanonlinetrainings.com/
+    - listitem [ref=e43]:
+      - link "Blog" [ref=e44] [cursor=pointer]:
+        - /url: https://www.pavantestingtools.com/
+    - listitem [ref=e45]:
+      - link "PlaywrightPractice" [ref=e46] [cursor=pointer]:
+        - /url: https://testautomationpractice.blogspot.com/p/playwrightpractice.html
+  - generic [ref=e50]:
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e66]:
+          - heading "PlaywrightPractice" [level=3] [ref=e67]
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - heading "1. getByRole() Locators" [level=2] [ref=e70]:
+                - text: "1."
+                - generic [ref=e71]: getByRole()
+                - text: Locators
+              - paragraph [ref=e72]: Locate elements by their explicit or implicit ARIA roles.
+              - generic [ref=e73]:
+                - generic [ref=e74]:
+                  - heading "Buttons" [level=3] [ref=e75]
+                  - button "Primary Action" [ref=e76] [cursor=pointer]
+                  - button "Toggle Button" [ref=e77] [cursor=pointer]
+                  - button "Div with button role" [ref=e78]
+                - generic [ref=e79]:
+                  - heading "Form Elements" [level=3] [ref=e80]
+                  - generic [ref=e81]: "Username:"
+                  - textbox "Username:" [ref=e82]
+                  - generic [ref=e83]:
+                    - checkbox "Accept terms" [ref=e84]
+                    - text: Accept terms
+                - generic [ref=e85]:
+                  - heading "Navigation" [level=3] [ref=e86]
+                  - navigation [ref=e87]:
+                    - list [ref=e88]:
+                      - menuitem "Home" [ref=e89]:
+                        - link "Home" [ref=e90] [cursor=pointer]:
+                          - /url: "#"
+                      - menuitem "Products" [ref=e91]:
+                        - link "Products" [ref=e92] [cursor=pointer]:
+                          - /url: "#"
+                      - menuitem "Contact" [ref=e93]:
+                        - link "Contact" [ref=e94] [cursor=pointer]:
+                          - /url: "#"
+                  - alert [ref=e95]: This is an important alert message!
+            - generic [ref=e96]:
+              - heading "2. getByText() Locators" [level=2] [ref=e97]:
+                - text: "2."
+                - generic [ref=e98]: getByText()
+                - text: Locators
+              - paragraph [ref=e99]: Locate elements by their text content.
+              - generic [ref=e100]:
+                - paragraph [ref=e101]:
+                  - text: This paragraph contains some
+                  - strong [ref=e102]: important
+                  - text: text that you might want to locate.
+                - paragraph [ref=e103]:
+                  - text: Another paragraph with
+                  - generic [ref=e104]: colored text
+                  - text: for demonstration.
+              - list [ref=e105]:
+                - listitem [ref=e106]: List item 1
+                - listitem [ref=e107]:
+                  - text: List item 2 with
+                  - link "link" [ref=e108] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e109]: "Special: Unique text identifier"
+              - generic [ref=e110]:
+                - button "Submit Form" [ref=e111] [cursor=pointer]
+                - paragraph [ref=e112]: Click the button above to submit your information.
+            - generic [ref=e113]:
+              - heading "3. getByLabel() Locators" [level=2] [ref=e114]:
+                - text: "3."
+                - generic [ref=e115]: getByLabel()
+                - text: Locators
+              - paragraph [ref=e116]: Locate form controls by their associated label text.
+              - generic [ref=e117]:
+                - generic [ref=e118]: "Email Address:"
+                - textbox "Email Address:" [ref=e119]
+              - generic [ref=e121]:
+                - text: "Password:"
+                - textbox "Password:" [ref=e122]
+              - generic [ref=e123]:
+                - generic [ref=e124]: "Your Age:"
+                - spinbutton "Your Age:" [ref=e125]
+              - group "Shipping Method" [ref=e126]:
+                - generic [ref=e127]: Shipping Method
+                - generic [ref=e128]:
+                  - radio "Standard" [ref=e129]
+                  - text: Standard
+                - generic [ref=e130]:
+                  - radio "Express" [ref=e131]
+                  - text: Express
+            - generic [ref=e132]:
+              - heading "4. getByPlaceholder() Locators" [level=2] [ref=e133]:
+                - text: "4."
+                - generic [ref=e134]: getByPlaceholder()
+                - text: Locators
+              - paragraph [ref=e135]: Locate input elements by their placeholder text.
+              - textbox "Enter your full name" [ref=e137]
+              - textbox "Phone number (xxx-xxx-xxxx)" [ref=e139]
+              - textbox "Type your message here..." [ref=e141]
+              - generic [ref=e142]:
+                - searchbox "Search products..." [ref=e143]
+                - button "Search" [ref=e144] [cursor=pointer]
+            - generic [ref=e145]:
+              - heading "5. getByAltText() Locators" [level=2] [ref=e146]:
+                - text: "5."
+                - generic [ref=e147]: getByAltText()
+                - text: Locators
+              - paragraph [ref=e148]: Locate elements (usually images) by their alt text.
+              - generic [ref=e149]:
+                - img "logo image" [ref=e150]
+                - paragraph [ref=e151]: Playwright Logo
+          - generic [ref=e152]:
+            - heading "6. getByTitle() Locators" [level=2] [ref=e153]:
+              - text: "6."
+              - generic [ref=e154]: getByTitle()
+              - text: Locators
+            - paragraph [ref=e155]: Locate elements by their title attribute.
+            - generic [ref=e156]:
+              - paragraph [ref=e157]: "Hover over these elements to see their titles:"
+              - list [ref=e158]:
+                - listitem [ref=e159]:
+                  - link "Home" [ref=e160] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e161]:
+                  - generic "HyperText Markup Language" [ref=e162]: HTML
+                - listitem [ref=e163]:
+                  - generic "Tooltip text" [ref=e164]: This text has a tooltip
+            - button "Save" [ref=e165] [cursor=pointer]
+          - generic [ref=e166]:
+            - heading "7. getByTestId() Locators" [level=2] [ref=e167]:
+              - text: "7."
+              - generic [ref=e168]: getByTestId()
+              - text: Locators
+            - paragraph [ref=e169]:
+              - text: Locate elements by their
+              - code [ref=e170]: data-testid
+              - text: attribute (or other configured attribute).
+            - generic [ref=e171]:
+              - heading "John Doe" [level=3] [ref=e172]
+              - paragraph [ref=e173]: john.doe@example.com
+              - button "Edit Profile" [ref=e174] [cursor=pointer]
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - heading "Product A" [level=4] [ref=e177]
+                - paragraph [ref=e178]: $19.99
+              - generic [ref=e179]:
+                - heading "Product B" [level=4] [ref=e180]
+                - paragraph [ref=e181]: $29.99
+              - generic [ref=e182]:
+                - heading "Product C" [level=4] [ref=e183]
+                - paragraph [ref=e184]: $39.99
+            - navigation [ref=e185]:
+              - list [ref=e186]:
+                - listitem [ref=e187]:
+                  - link "Home" [ref=e188] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e189]:
+                  - link "Products" [ref=e190] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e191]:
+                  - link "Contact" [ref=e192] [cursor=pointer]:
+                    - /url: "#"
+          - contentinfo [ref=e193]:
+            - paragraph [ref=e194]: This page demonstrates various Playwright locators for testing purposes.
+            - button "↑ Top" [ref=e195] [cursor=pointer]
+        - link "Home" [ref=e199] [cursor=pointer]:
+          - /url: https://testautomationpractice.blogspot.com/
+        - generic [ref=e201]:
+          - text: "Subscribe to:"
+          - link "Posts (Atom)" [ref=e202] [cursor=pointer]:
+            - /url: https://testautomationpractice.blogspot.com/feeds/posts/default
+      - generic [ref=e203]:
+        - heading "Upload Files" [level=2] [ref=e204]
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - button "Choose File" [ref=e207]
+            - button "Upload Single File" [ref=e208] [cursor=pointer]
+          - paragraph
+          - generic [ref=e209]:
+            - button "Choose File" [ref=e210]
+            - button "Upload Multiple Files" [ref=e211] [cursor=pointer]
+          - paragraph
+      - generic [ref=e212]:
+        - heading "Static Web Table" [level=2] [ref=e213]
+        - table [ref=e215]:
+          - rowgroup [ref=e216]:
+            - row "BookName Author Subject Price" [ref=e217]:
+              - cell "BookName" [ref=e218]
+              - cell "Author" [ref=e219]
+              - cell "Subject" [ref=e220]
+              - cell "Price" [ref=e221]
+            - row "Learn Selenium Amit Selenium 300" [ref=e222]:
+              - cell "Learn Selenium" [ref=e223]
+              - cell "Amit" [ref=e224]
+              - cell "Selenium" [ref=e225]
+              - cell "300" [ref=e226]
+            - row "Learn Java Mukesh Java 500" [ref=e227]:
+              - cell "Learn Java" [ref=e228]
+              - cell "Mukesh" [ref=e229]
+              - cell "Java" [ref=e230]
+              - cell "500" [ref=e231]
+            - row "Learn JS Animesh Javascript 300" [ref=e232]:
+              - cell "Learn JS" [ref=e233]
+              - cell "Animesh" [ref=e234]
+              - cell "Javascript" [ref=e235]
+              - cell "300" [ref=e236]
+            - row "Master In Selenium Mukesh Selenium 3000" [ref=e237]:
+              - cell "Master In Selenium" [ref=e238]
+              - cell "Mukesh" [ref=e239]
+              - cell "Selenium" [ref=e240]
+              - cell "3000" [ref=e241]
+            - row "Master In Java Amod JAVA 2000" [ref=e242]:
+              - cell "Master In Java" [ref=e243]
+              - cell "Amod" [ref=e244]
+              - cell "JAVA" [ref=e245]
+              - cell "2000" [ref=e246]
+            - row "Master In JS Amit Javascript 1000" [ref=e247]:
+              - cell "Master In JS" [ref=e248]
+              - cell "Amit" [ref=e249]
+              - cell "Javascript" [ref=e250]
+              - cell "1000" [ref=e251]
+      - generic [ref=e252]:
+        - heading "Dynamic Web Table" [level=2] [ref=e253]
+        - generic:
+          - table:
+            - rowgroup:
+              - row
+            - rowgroup
+      - generic [ref=e254]:
+        - heading "Pagination Web Table" [level=2] [ref=e255]
+        - generic [ref=e257]:
+          - table [ref=e258]:
+            - rowgroup [ref=e259]:
+              - row "ID Name Price Select" [ref=e260]:
+                - cell "ID" [ref=e261]
+                - cell "Name" [ref=e262]
+                - cell "Price" [ref=e263]
+                - cell "Select" [ref=e264]
+            - rowgroup [ref=e265]:
+              - row "1 Smartphone $10.99" [ref=e266]:
+                - cell "1" [ref=e267]
+                - cell "Smartphone" [ref=e268]
+                - cell "$10.99" [ref=e269]
+                - cell [ref=e270]:
+                  - checkbox [ref=e271]
+              - row "2 Laptop $19.99" [ref=e272]:
+                - cell "2" [ref=e273]
+                - cell "Laptop" [ref=e274]
+                - cell "$19.99" [ref=e275]
+                - cell [ref=e276]:
+                  - checkbox [ref=e277]
+              - row "3 Tablet $5.99" [ref=e278]:
+                - cell "3" [ref=e279]
+                - cell "Tablet" [ref=e280]
+                - cell "$5.99" [ref=e281]
+                - cell [ref=e282]:
+                  - checkbox [ref=e283]
+              - row "4 Smartwatch $7.99" [ref=e284]:
+                - cell "4" [ref=e285]
+                - cell "Smartwatch" [ref=e286]
+                - cell "$7.99" [ref=e287]
+                - cell [ref=e288]:
+                  - checkbox [ref=e289]
+              - row "5 Wireless Earbuds $8.99" [ref=e290]:
+                - cell "5" [ref=e291]
+                - cell "Wireless Earbuds" [ref=e292]
+                - cell "$8.99" [ref=e293]
+                - cell [ref=e294]:
+                  - checkbox [ref=e295]
+          - list [ref=e296]:
+            - listitem [ref=e297]:
+              - link "1" [ref=e298] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e299]:
+              - link "2" [ref=e300] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e301]:
+              - link "3" [ref=e302] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e303]:
+              - link "4" [ref=e304] [cursor=pointer]:
+                - /url: "#"
+    - generic:
+      - generic:
+        - complementary
+    - complementary [ref=e307]:
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - heading "Tabs" [level=2] [ref=e310]
+          - generic [ref=e313]:
+            - link [ref=e315] [cursor=pointer]:
+              - /url: https://wikipedia.org/wiki/
+              - img [ref=e316] [cursor=pointer]
+            - generic [ref=e317]:
+              - textbox [ref=e319]
+              - button "Submit" [ref=e321]
+        - generic [ref=e323]:
+          - heading "Dynamic Button" [level=2] [ref=e324]
+          - button "START" [ref=e326] [cursor=pointer]
+        - generic [ref=e327]:
+          - heading "Alerts & Popups" [level=2] [ref=e328]
+          - generic [ref=e329]:
+            - button "Simple Alert" [ref=e330] [cursor=pointer]
+            - button "Confirmation Alert" [ref=e331] [cursor=pointer]
+            - button "Prompt Alert" [ref=e332] [cursor=pointer]
+            - paragraph
+        - button "New Tab" [ref=e335] [cursor=pointer]
+        - button "Popup Windows" [ref=e340] [cursor=pointer]
+        - generic [ref=e341]:
+          - heading "Mouse Hover" [level=2] [ref=e342]
+          - generic [ref=e343]:
+            - paragraph [ref=e344]: Move the mouse over the button to open the dropdown menu.
+            - button "Point Me" [ref=e346] [cursor=pointer]
+        - generic [ref=e347]:
+          - heading "Double Click" [level=2] [ref=e348]
+          - generic [ref=e349]:
+            - text: "Field1:"
+            - textbox [ref=e350]: Hello World!
+            - text: "Field2:"
+            - textbox [ref=e351]
+            - button "Copy Text" [ref=e352] [cursor=pointer]
+            - paragraph [ref=e353]: Double click on button, the text from Field1 will be copied into Field2.
+        - generic [ref=e354]:
+          - heading "Drag and Drop" [level=2] [ref=e355]
+          - generic:
+            - paragraph [ref=e357]: Drag me to my target
+            - paragraph [ref=e359]: Drop here
+        - heading "Slider" [level=2] [ref=e361]
+```
