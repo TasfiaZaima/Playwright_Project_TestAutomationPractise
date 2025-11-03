@@ -1,0 +1,43 @@
+import { test, expect } from '@playwright/test';
+
+test('Practice: Handles alerts, popups, copy text, drag-drop and sliders', async ({ page }) => {
+  await page.goto('https://testautomationpractice.blogspot.com/p/gui-elements-ajax-hidden.html');
+  await page.getByRole('button', { name: 'Toggle Input Box' }).click();
+  await page.getByRole('button', { name: 'Toggle Checkbox' }).click();
+  await page.getByRole('checkbox', { name: 'Checkbox 1' }).check();
+  await page.getByRole('checkbox', { name: 'Checkbox 2' }).check();
+  await page.getByRole('button', { name: 'Load AJAX Content' }).click();
+  await page.getByText('Checkbox 2 shown').click();
+  await page.getByRole('button', { name: 'Upload Single File' }).click();
+  await page.getByText('No file selected.').click();
+  await page.locator('#multipleFilesForm').click();
+  await page.getByText('No files selected.').click();
+  await page.getByRole('heading', { name: 'Static Web Table' }).click();
+
+  await page.getByRole('heading', { name: 'Dynamic Web Table' }).click();
+  await page.getByRole('heading', { name: 'Pagination Web Table' }).click();
+  await page.getByRole('link', { name: '1', exact: true }).click();
+  await page.getByText('1234').click();
+  await page.getByText('1234').click();
+  await page.getByRole('link', { name: '3', exact: true }).click();
+  await page.getByRole('link', { name: '4', exact: true }).click();
+  await page.getByRole('row', { name: 'E-Reader $10.99' }).getByRole('checkbox').check();
+  await page.getByRole('row', { name: '17 VR Headset $' }).getByRole('checkbox').check();
+  await page.getByRole('row', { name: 'Streaming Device $13.99' }).getByRole('checkbox').check();
+  await page.getByRole('row', { name: 'Soundbar $16.99' }).getByRole('checkbox').check();
+  await page.getByRole('row', { name: 'Wireless Mouse 20 $17.99' }).getByRole('checkbox').check();
+  await page.locator('input[name="input1"]').click();
+  await page.getByText('Section 1 This is a paragraph').click();
+  await page.locator('input[name="input1"]').click();
+  await page.locator('#section1').getByRole('button', { name: 'Submit' }).click();
+  await page.locator('input[name="input1"]').click();
+  await page.locator('input[name="input1"]').fill('ABC');
+  await page.locator('#section1').getByRole('button', { name: 'Submit' }).click();
+  await page.locator('input[name="input2"]').click();
+  await page.locator('input[name="input2"]').fill('DEF');
+  await page.locator('#section2').getByRole('button', { name: 'Submit' }).click();
+  await page.locator('#input3').dblclick();
+  await page.locator('#input3').fill('GHI');
+  await page.locator('#section3').getByRole('button', { name: 'Submit' }).click();
+  await page.locator('#shadow_host').getByRole('link', { name: 'Blog' }).click();
+});

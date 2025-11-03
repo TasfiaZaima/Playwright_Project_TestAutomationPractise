@@ -1,6 +1,0 @@
-Filled Name=fjvhxarndl, Email=qlrosq@uudtf.com, Phone=1062546378, Address="868 ehjvreba Street, futqfc City"
-Selected Gender=female; Days=[tuesday, monday, friday, saturday]
-Selected Country=france; Colors=[red, blue]
-Selected Animals=[elephant, deer, zebra]
-Date Picker 1 = 11/12/2020
-Date Picker 2 = 21/08/2023

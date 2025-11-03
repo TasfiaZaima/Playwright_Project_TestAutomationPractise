@@ -1,6 +1,0 @@
-Filled Name=nyjqstrzkr, Email=divydc@baikr.com, Phone=9241214104, Address="572 wlvwiqki Street, nhcign City"
-Selected Gender=female; Days=[sunday, saturday, monday]
-Selected Country=japan; Colors=[yellow, red]
-Selected Animals=[zebra, giraffe]
-Date Picker 1 = 07/17/2024
-Date Picker 2 = 17/03/2024

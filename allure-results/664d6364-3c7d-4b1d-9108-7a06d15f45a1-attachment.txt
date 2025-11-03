@@ -1,6 +1,0 @@
-Filled Name=hvsovbxyjc, Email=fseirx@hzbus.com, Phone=7720962121, Address="339 ddhixhdr Street, nmetyj City"
-Selected Gender=male; Days=[saturday, sunday, friday, monday]
-Selected Country=france; Colors=[green, blue, yellow]
-Selected Animals=[zebra, dog, cheetah]
-Date Picker 1 = 05/23/2022
-Date Picker 2 = 10/03/2020
