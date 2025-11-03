@@ -1,15 +1,3 @@
-// tests/e2e-practice-site.spec.ts
-// Single Playwright test that performs ALL actions in sequence on
-// https://testautomationpractice.blogspot.com/:
-// - Fill random text fields
-// - Select random gender, days (checkboxes), country, and colors (multi-select)
-// - Select random animals (multi-select)
-// - Fill both date pickers (mm/dd/yyyy and dd/mm/yyyy)
-// - Click each top-nav link, validate URL, then go back Home
-//
-// Run headed & slower so you can see each step:
-// npx playwright test tests/e2e-practice-site.spec.ts --project=chromium --headed --slow-mo=250
-
 import { test, expect } from '@playwright/test';
 
 // -----------------
@@ -39,7 +27,7 @@ function randomMultiple<T>(arr: T[], count: number): T[] {
 // -----------------
 // Single End-to-End Test
 // -----------------
-test('Practice site • End-to-end random interactions + top nav', async ({ page }) => {
+test('End-to-end random interactions', async ({ page }) => {
   const MAIN_URL = 'https://testautomationpractice.blogspot.com/';
   const NAV = '#PageList2';
 
